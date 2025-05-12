@@ -1,14 +1,14 @@
 # Partage de fichiers Windows : NTFS ou partagé, comment attribuer des autorisations de dossier
 
-#### Objectives:
+#### Objectifs :
 
-- Undestand the importance of file sharing in a networked environement
-- Learn how to share files and folders effectively
-- Differentiate between network sharing types and their use cases.
-- Undestand how permissions control user access to shared files
-- Learn how to access hared folders efficiently
+- Comprendre l'importance du partage de fichiers dans un environnement en réseau
+- Apprenez à partager efficacement des fichiers et des dossiers
+- Faites la différence entre les types de partage de réseau et leurs cas d’utilisation.
+- Comprendre comment les autorisations contrôlent l'accès des utilisateurs aux fichiers partagés
+- Apprenez à accéder efficacement aux dossiers partagés
 
-#### NTFS vs Share Permissions
+#### Autorisations NTFS et autorisations de partage
 
 ```sh
 ------------------|------------------------------------------------|---------------------------------------------|
@@ -21,7 +21,7 @@ Granular Control  |   Very detailed (Full Control, Modify,         | Full Contro
 ------------------|------------------------------------------------|---------------------------------------------|
 ```
 
-- Voici le dossier marketing ce que nous voulons faire les autorisations, clic droit sur le dossier que vous souhaitez verifier et que cliquez sur propriétés et cliquez sur l'onglet de partage.
+- Voici le dossier marketing ce que nous voulons faire les autorisations, cliquez droit sur le dossier que vous souhaitez vérifier et que cliquez sur propriétés et cliquez sur l'onglet de partage.
 
 ![NTFS](/05_NTFS/assets/01.png)
 
@@ -29,11 +29,11 @@ Granular Control  |   Very detailed (Full Control, Modify,         | Full Contro
 
 ![NTFS](/05_NTFS/assets/02.png)
 
-- Nous verrons les differents types d'autorisations de partage que vous pouvez donner à différents utilisateurs ou groupes donc comme vous pouvez le voir, il n'y a que tois autorisations control total
+- Nous verrons les différents types d'autorisations de partage que vous pouvez donner à différents utilisateurs ou groupes donc comme vous pouvez le voir, il n'y a que vous êtes contrôle total des autorisations.
 
 ![NTFS](/05_NTFS/assets/03.png)
 
-- Vérifions les autorisations ncfs. Les autorisations ncfs peuvent être trouvées dans l'onglet sécurité et comme vous pouvez le voir,il ya plus d'autorisations par rapport au partage précédent. Il ya un contrôle total, modifier la lecture et éxecuter, cliquez simplement sur modifier
+- Vérifications les autorisations ncfs. Les autorisations ncfs peuvent être trouvées dans l'onglet sécurité et comme vous pouvez le voir,il ya plus d'autorisations par rapport au partage précédent. Il y a un contrôle total, modifier la lecture et exécuter, cliquez simplement sur modifier.
 
 ![NTFS](/05_NTFS/assets/04.png)
 
@@ -41,21 +41,21 @@ Granular Control  |   Very detailed (Full Control, Modify,         | Full Contro
 
 ![NTFS](/05_NTFS/assets/05.png)
 
-- Il suffit de rechercher leur nom de groupe, cela depend de votre entreprise.
+- Il suffit de rechercher leur nom de groupe, cela dépend de votre entreprise.
 
 ![NTFS](/05_NTFS/assets/06.png)
 
-- A marketing intern needs access to the Marketing Team's shared folder `Marketing` to view content but should not modify or delete files.
+- Un stagiaire en marketing doit accéder au dossier partagé de l'équipe `marketing` Marketingpour afficher le contenu, mais ne doit pas modifier ni supprimer de fichiers.
 
 ![NTFS](/05_NTFS/assets/07.png)
 
 ![NTFS](/05_NTFS/assets/08.png)
 
-#### Activity 2: Hands-on activity
+#### Activité 2 : Activité pratique
 
-- The HR Department needs a secure folder HRGroup that only HR staff can access. Other employees should not see the folder at all.
+- Le service RH a besoin d'un dossier sécurisé, HRGroup, accessible uniquement aux employés des RH. Les autres employés ne doivent pas le voir.
 
-> Faisons clic droit sur le dossier; allons dans les propriétés et cliquons sur l'onglet partage et partage avancé, cliquons sur partager ce dossier
+> Faisons clic droit sur le dossier; allons dans les propriétés et clics sur l'onglet partage et partage avancé, cliquons sur partager ce dossier
 
 ![NTFS](/05_NTFS/assets/09.png)
 
@@ -71,9 +71,9 @@ Granular Control  |   Very detailed (Full Control, Modify,         | Full Contro
 
 ![NTFS](/05_NTFS/assets/14.png)
 
-> Cliquer sur l'onglet sécurité, comme vous pouvez le voir le groupe RH est le département RH n'est pas encore ajouté et nouq cliquons sur l'utilisateur, nous pouvons voir qu'ils n'ont que les autorisations de lecture et d'exécution et de lecture du contenu du dossier de liste.
+- Cliquez sur l'onglet sécurité, comme vous pouvez le voir le groupe RH est le département RH n'est pas encore ajouté et nouq clics sur l'utilisateur, nous pouvons voir qu'ils n'ont que les autorisations de lecture et d'exécution et de lecture du contenu du dossier de liste.
 
-> Cliquer sur edit et ajouter à cela également, ajoutons RH groupe et nous pouvons leur donner le contrôle total au niveau NTFS également, assurez-vous simplement que si vous modifiez quelque chose sur l'autorisation de partage, verifiez également si l'autorisation ncfs doit être ajustée ou modifiée également. Ils devraient être autorisés a faire tout ce qui se trouve dans leurs dossiers.
+- Cliquez sur edit et ajouter à cela également, ajoutons RH groupe et nous pouvons leur donner le contrôle total au niveau NTFS également, assurez-vous simplement que si vous modifiez quelque chose sur l'autorisation de partage, vérifiez également si l'autorisation ncfs doit être modifiée ou modifiée également. Ils devraient être autorisés à faire tout ce qui se trouve dans leurs dossiers.
 
 ![NTFS](/05_NTFS/assets/15.png)
 
@@ -85,11 +85,11 @@ Granular Control  |   Very detailed (Full Control, Modify,         | Full Contro
 
 ![NTFS](/05_NTFS/assets/19.png)
 
-#### Activity 3: Hands-on activity
+#### Activité 3 : Activité pratique
 
-- A third-party vendor needs access to a temporary folder **VendorFiles** to upload reports but should not see other files.
+- Un fournisseur tiers a besoin d'accéder à un dossier temporaire `VendorFiles` pour télécharger des rapports, mais ne doit pas voir d'autres fichiers.
 
-> Faisons clic droit dessus et cliquons sur Propriétés, allons donc aux autorisations partagées, cliquons sur partage et partage avancé, puis autorisations et il est déjà partagé avec tout le monde, mais il n'a qu'un accès en lecture, alors ajoutons le fourniseur et recherchons son groupe, donnons-leur le contrôle total sur ces autorisations partagées parceque nous voulons qu'ils puissent télécharger et accéder aux autres fichiers sous ce dossier partagé.
+> Faisons clic droit dessus et cliquons sur Propriétés, allons donc aux autorisations partagées, cliquons sur partage et partage avancé, puis autorisations et il est déjà partagé avec tout le monde, mais il n'a qu'un accès en lecture, alors ajoutons le fournisseurs et recherchons son groupe, donnons-leur le contrôle total sur ces autorisations partagées parce que nous voulons qu'ils puissent télécharger et accéder aux autres fichiers sous ce dossier
 
 ![NTFS](/05_NTFS/assets/20.png)
 
@@ -101,7 +101,7 @@ Granular Control  |   Very detailed (Full Control, Modify,         | Full Contro
 
 ![NTFS](/05_NTFS/assets/24.png)
 
-- Autorisation NTFS et voyons quelle autorisation nous pouvons donner au fournisseur et la seule tâche que nous voulons que le fournisseur fasse est de télécharger des rapports afin qu'il ne voie pas les autres fichiers sous le nom de fournisseur et tout ce qu'il a à faire est de télécharger car il pourrait y avoir d'autres fichiers qu'il n'est pas autorisé à voir ou à lire car ils pourraient être confidentiels. Nous devons donc restreindre cette autorisation afin que le fournisseur ne puisse effectuer q'une seule tâche qui est le telechargement.
+- Autorisation NTFS et voyons quelle autorisation nous pouvons donner au fournisseur et la seule tâche que nous voulons que le fournisseur fasse est de télécharger des rapports afin qu'il ne voie pas les autres fichiers sous le nom de fournisseur et tout ce qu'il a à faire est de télécharger car il pourrait y avoir d'autres fichiers qu'il n'est pas autorisé à voir ou à lire car ils pourraient être confidentiels. Nous devons donc restreindre cette autorisation afin que le fournisseur ne puisse effectuer qu'une seule tâche qui est le téléchargement.
 
 ![NTFS](/05_NTFS/assets/25.png)
 
@@ -113,11 +113,11 @@ Granular Control  |   Very detailed (Full Control, Modify,         | Full Contro
 
 ![NTFS](/05_NTFS/assets/29.png)
 
-#### Activity 4: Hands-on activity
+#### Activité 4 : Activité pratique
 
-- In the IT Department, all techs need access to the Software Repository **Software** but only senior IT staff should be able to access the `Licences` subfolder.
+- Au sein du département informatique, tous les techniciens doivent avoir accès au référentiel de logiciels, mais seul le personnel informatique senior doit pouvoir accéder au `Licences` sous-dossier.
 
-> Faisons clic droit dessus et cliquons sur Propriétés, allons donc aux autorisations partagées, cliquons sur partage et partage avancé, puis autorisations
+- Faisons clic droit dessus et cliquons sur Propriétés, allons donc aux autorisations partagées, cliquons sur partage et partage avancé, puis autorisations
 
 ![NTFS](/05_NTFS/assets/30.png)
 
@@ -129,7 +129,7 @@ Granular Control  |   Very detailed (Full Control, Modify,         | Full Contro
 
 ![NTFS](/05_NTFS/assets/34.png)
 
-- Il est indiqué dans l'activité que seul le personnel informatique senior devrait pouvoir accéder au sous-dossier des licences, donc ajustons l'autorisation de ces sous-dossiers pour autoriser uniquement l'accès à l'informatique senior.
+- Il est indiqué dans l'activité que seul le personnel informatique `senior` devrait pouvoir accéder au sous-dossier des licences, donc ajustons l'autorisation de ces sous-dossiers pour autoriser uniquement l'accès à l'informatique `senior`.
 
 ![NTFS](/05_NTFS/assets/35.png)
 
@@ -147,6 +147,6 @@ Granular Control  |   Very detailed (Full Control, Modify,         | Full Contro
 
 ![NTFS](/05_NTFS/assets/42.png)
 
-#### Bonus Question
+#### Question bonus
 
-- If a user has read permissions on an NTFS folder but Full control on the share, what is their effective permission when accessing the folder over the network ?
+- Si un utilisateur dispose d'autorisations de lecture sur un dossier NTFS mais d'un contrôle total sur le partage, quelle est son autorisation effective lors de l'accès au dossier sur le réseau ?
