@@ -8,33 +8,36 @@
 
 - Configurez et appliquez une politique de mot de passe fort (12 caractères ou plus) pour les utilisateurs AD.
 
-  > Minimum password length
+  > Longueur minimale du mot de passe
 
-  > Password Complexity
-  
-  > Password Age
+  > Complexité du mot de passe
 
-- Clic droit sur modifier et que choisissons-nous
+  > Âge du mot de passe
 
-![Security Policy](/KEEPS/04_Security_Policies/assets/01.png)
+- Cliquez droit sur modifier et que choisissons-nous
 
-- Sélectionner la configuration de l'ordinateur
+
+![Security Policy](/04_Security_Policies/assets/01.png)
+
+- Sélectionnez la configuration de l'ordinateur
 
 `Navigate to Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Password Policy`
 
-![Security Policy](/KEEPS/04_Security_Policies/assets/02.png)
+![Security Policy](/04_Security_Policies/assets/02.png)
 
-#### Activity 2: Account Policy Configuration
+#### Activité 2 : Configuration de la politique de compte
 
-- Configure and account lockout policy to project against brute-force attacks.
+- Configurez une politique de verrouillage de compte pour vous protéger contre les attaques par force brute.
 
   > Password threshold
+
   > Password lockout duration
+  
   > The higher threshold, the higher the probability for a successful brute force attack
 
 `Navigate to Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Account Lockout Policy`
 
-![Security Policy](/KEEPS/04_Security_Policies/assets/03.png)
+![Security Policy](/04_Security_Policies/assets/03.png)
 
 > Reset Account Lockout counter after: 30 minutes
 
@@ -46,27 +49,27 @@
 
   > `Restrict Remote Desktop Access`
 
-![Security Policy](/KEEPS/04_Security_Policies/assets/04.png)
+![Security Policy](/04_Security_Policies/assets/04.png)
 
-![Security Policy](/KEEPS/04_Security_Policies/assets/05.png)
+![Security Policy](/04_Security_Policies/assets/05.png)
 
 `Navigate to Computer Configuration > Policies > Windows Settings > Security Settings > Local Policies > User Rights Assignment`
 
 > Recherchez donc Refuser la connexion locale
 
-![Security Policy](/KEEPS/04_Security_Policies/assets/06.png)
+![Security Policy](/04_Security_Policies/assets/06.png)
 
-![Security Policy](/KEEPS/04_Security_Policies/assets/07.png)
+![Security Policy](/04_Security_Policies/assets/07.png)
 
 > Puis ajoutez des groupes pour les utilisateurs qui ne doivent pas se conneter directement aux serveurs #Groupe #.
 
-![Security Policy](/KEEPS/04_Security_Policies/assets/08.png)
+![Security Policy](/04_Security_Policies/assets/08.png)
 
-![Security Policy](/KEEPS/04_Security_Policies/assets/09.png)
+![Security Policy](/04_Security_Policies/assets/09.png)
 
-![Security Policy](/KEEPS/04_Security_Policies/assets/10.png)
+![Security Policy](/04_Security_Policies/assets/10.png)
 
-![Security Policy](/KEEPS/04_Security_Policies/assets/11.png)
+![Security Policy](/04_Security_Policies/assets/11.png)
 
 #### Activity 4: Implementing Fine-Grained Password Policies
 
@@ -81,11 +84,11 @@
 
 > Créer un nouvel objet de paramètres de mot de passe ou PSO.
 
-![Security Policy](/KEEPS/04_Security_Policies/assets/12.png)
+![Security Policy](/04_Security_Policies/assets/12.png)
 
-![Security Policy](/KEEPS/04_Security_Policies/assets/13.png)
+![Security Policy](/04_Security_Policies/assets/13.png)
 
-![Security Policy](/KEEPS/04_Security_Policies/assets/14.png)
+![Security Policy](/04_Security_Policies/assets/14.png)
 
 > Définir la politique de mot de passe administrateur, puis x est la priorité. Cela détermine l'ordre dans lequel les objets de politique sont appliqués lorsque plusieurs paramètre de mot de passe sont appliqués à un utilisateur ou à un groupe.
 
@@ -96,6 +99,6 @@ Setting 1 = 20
 Setting 2 = 30
 ```
 
-![Security Policy](/KEEPS/04_Security_Policies/assets/15.png)
+![Security Policy](/04_Security_Policies/assets/15.png)
 
-![Security Policy](/KEEPS/04_Security_Policies/assets/16.png)
+![Security Policy](/04_Security_Policies/assets/16.png)
