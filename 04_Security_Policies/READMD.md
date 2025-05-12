@@ -1,15 +1,17 @@
-# Security Policy
+# Politique de sécurité
 
-- Understand and Implement essential security measueres
+- Comprendre et mettre en œuvre les mesures de sécurité essentielles
 
-- Implementing Security Policies | Fine-Grained Passwords
+- Mise en œuvre des politiques de sécurité | Mots de passe à granularité fine
 
-#### Activity 1: Password Policy Configuration
+#### Activité 1 : Configuration de la politique de mot de passe
 
-- Configure and enforce a strong password (12 characters or more) policy for AD users.
+- Configurez et appliquez une politique de mot de passe fort (12 caractères ou plus) pour les utilisateurs AD.
 
   > Minimum password length
+
   > Password Complexity
+  
   > Password Age
 
 - Clic droit sur modifier et que choisissons-nous
