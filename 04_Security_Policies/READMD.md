@@ -16,7 +16,6 @@
 
 - Cliquez droit sur modifier et que choisissons-nous
 
-
 ![Security Policy](/04_Security_Policies/assets/01.png)
 
 - Sélectionnez la configuration de l'ordinateur
@@ -29,21 +28,21 @@
 
 - Configurez une politique de verrouillage de compte pour vous protéger contre les attaques par force brute.
 
-  > Password threshold
+  > Seuil de mot de passe
 
-  > Password lockout duration
-  
-  > The higher threshold, the higher the probability for a successful brute force attack
+  > Durée de verrouillage du mot de passe
+
+  > Plus le seuil est élevé, plus la probabilité d'une attaque par force brute réussie est élevée.
 
 `Navigate to Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Account Lockout Policy`
 
 ![Security Policy](/04_Security_Policies/assets/03.png)
 
-> Reset Account Lockout counter after: 30 minutes
+> Réinitialiser le compteur de verrouillage du compte après : 30 minutes
 
-#### Activity 3: User Rights Assignment
+#### Activité 3 : Attribution des droits d'utilisateur
 
-- Assign and restrict user rights to enhance security
+- Attribuer et restreindre les droits des utilisateurs pour améliorer la sécurité
 
   > `Deny Logon Locally`
 
@@ -71,18 +70,19 @@
 
 ![Security Policy](/04_Security_Policies/assets/11.png)
 
-#### Activity 4: Implementing Fine-Grained Password Policies
+#### Activité 4 : Mise en œuvre de politiques de mots de passe précises
 
-- Apply different password policies to different groups of users.
-- Scenario: The organization wants to apply stricter password policies to administrative accounts while allowing standard users to have less stringent requirements.
+- Appliquez différentes politiques de mot de passe à différents groupes d’utilisateurs.
 
-> Open the Active Directory Administrative Center (ADAC)
+- **Scénario** : l’organisation souhaite appliquer des politiques de mot de passe plus strictes aux comptes administratifs tout en permettant aux utilisateurs standard d’avoir des exigences moins strictes.
+
+> Ouvrir le centre d'administration Active Directory (ADAC)
 
 > Cliquez sur votre `nom de domaine`,
 
 > Puis sélectionnez `System > Password Settings Container`
 
-> Créer un nouvel objet de paramètres de mot de passe ou PSO.
+> Créer un nouvel objet de paramètres de mot de passe.
 
 ![Security Policy](/04_Security_Policies/assets/12.png)
 
@@ -90,9 +90,9 @@
 
 ![Security Policy](/04_Security_Policies/assets/14.png)
 
-> Définir la politique de mot de passe administrateur, puis x est la priorité. Cela détermine l'ordre dans lequel les objets de politique sont appliqués lorsque plusieurs paramètre de mot de passe sont appliqués à un utilisateur ou à un groupe.
+- Définir la politique de mot de passe administrateur, puis x est la priorité. Cela détermine l'ordre dans lequel les objets de politique sont appliqués lorsque plusieurs paramètre de mot de passe sont appliqués à un utilisateur ou à un groupe.
 
-> Par exemple, il ya un utilisateur avec deux paramètres de mot de passe, le premier paramètre avec le priorité de `20` et le deuxième avec la priorité de `30` donc celui avec le numéro le plus bas aura la présidence et c'est lui avec la présidence `20` donc pour ce paramètre de mot de passe administrateur
+- Par exemple, il ya un utilisateur avec deux paramètres de mot de passe, le premier paramètre avec le priorité de `20` et le deuxième avec la priorité de `30` donc celui avec le numéro le plus bas aura la présidence et c'est lui avec la présidence `20` donc pour ce paramètre de mot de passe administrateur
 
 ```sh
 Setting 1 = 20
