@@ -1,12 +1,12 @@
-# Group Policy Management
+# Gestion des stratégies de groupe
 
 - Group Policy Object (GPO), signifie objet de stratégie de group.
 - GPO est donc un ensemble de strategies et d'Active Directory qui peuvent être appliqués aux domaines et aux O us.
 - Les GPO sont donc utilisés par les administrateurs pour gérer les paramètres aux utilisateurs et aux ordinateurs.
 
-#### Activity 1: Password Policy
+#### Activité 1 : Politique relative aux mots de passe
 
-- Set a password policy to enforce strong passwords and enhance security.
+- Définissez une politique de mot de passe pour appliquer des mots de passe forts et améliorer la sécurité.
 
 > Allons dans votre machine et tapez `Group Policy Management > Domains > srv22.local > Create a GPO in this domain, and Link it here...`.
 
@@ -20,9 +20,9 @@
 
 ![GPO](/02_Group_Policy_Management/assets/06.png)
 
-#### Activity 2: Drive Mapping
+#### Activité 2 : Cartographie des lecteurs
 
-- Map network drives for users when they login
+- Mappez les lecteurs réseau pour les utilisateurs lorsqu'ils se connectent
 
 > Allons dans votre machine et tapez `Group Policy Management > Domains > srv22.local > Create a GPO in this domain, and Link it here...`.
 
@@ -38,9 +38,9 @@
 
 ![GPO](/02_Group_Policy_Management/assets/11.png)
 
-#### Activity 3: Desktop Wallpaper Policy
+#### Activité 3 : Politique relative aux fonds d'écran
 
-- Set a default desktop wallpaper for all users.
+- Définissez un fond d’écran de bureau par défaut pour tous les utilisateurs.
 
 > Clic droit sur votre domaine créons un GPO.
 
@@ -56,9 +56,9 @@
 
 ![GPO](/02_Group_Policy_Management/assets/15.png)
 
-#### Activity 4: Restrict Access to Control Panel
+#### Activité 4 : Restreindre l'accès au panneau de configuration
 
-- Prevent users from accessing the Control Panel.
+- Empêcher les utilisateurs d’accéder au panneau de configuration.
 
 > Créons le GPO, clic sur le domaine et créez un GPO nommons le restreindre le panneau de configurations.
 
@@ -82,9 +82,9 @@
 
 ![GPO](/02_Group_Policy_Management/assets/20.png)
 
-#### Activity 5: Disable USB Storage
+#### Activité 5 : Désactiver le stockage USB
 
-- Prevent users from using USB storage devices.
+- Empêcher les utilisateurs d’utiliser des périphériques de stockage USB.
 
 > Créons le GPO, clic sur le domaine et créez un GPO nommons le périphérique USB.
 
@@ -100,6 +100,6 @@
 
 ![GPO](/02_Group_Policy_Management/assets/26.png)
 
-#### Bonus: Account Lockout Policy
+#### Bonus : Politique de verrouillage de compte
 
-- Configure account lockout settings to prevent brute force attacks.
+- Configurez les paramètres de verrouillage de compte pour empêcher les attaques par force brute.
