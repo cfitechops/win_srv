@@ -1,17 +1,17 @@
-# File Services Setting up Network Sharing on Windows Server
+# Services de fichiers Configuration du partage réseau sur Windows Server
 
-- Set up file sharing within the AD environment.
+- Configurer le partage de fichiers dans l’environnement AD.
 
 #### Objectives:
 
-- Gain pratical experience with AD, file sharing services.
-- Pratice setting up and managing network resources and permissions.
+- Acquérir une expérience pratique avec AD et les services de partage de fichiers.
+- Pratiquez la configuration et la gestion des ressources et des autorisations du réseau.
 
-> **Network Sharing**
+> **Partage réseau**
 
-> **Permission Types**
+> **Types d'autorisation**
 
-> **File Service Resource Manager**
+> **Gestionnaire de ressources du service de fichiers**
 
 ```sh
 Permissions and Access Control ->   Read  |  Write  |  Execute  |  Full Control
@@ -27,11 +27,11 @@ Sharing Methods ->   Mapped  |  Network
 
 ![File Services](/03_File_Services/assets/00.png)
 
-#### Activity 1: Set Up a File Sharing
+#### Activité 1 : Configurer un partage de fichiers
 
-- Configure File Sharing
-  > Create shared folders with appropriate permissions.
-  > Set NTFS and share permissions to allow domain users access.
+- Configurer le partage de fichiers
+  > Créez des dossiers partagés avec les autorisations appropriées. Définissez les autorisations NTFS et de partage
+  > pour permettre l'accès aux utilisateurs du domaine.
 
 ![File Services](/03_File_Services/assets/01.png)
 
@@ -43,12 +43,13 @@ Sharing Methods ->   Mapped  |  Network
 
 ![File Services](/03_File_Services/assets/05.png)
 
-#### Activity 2: Set Up Client Machines
+#### Activité 2 : Configuration des machines clientes
 
-- Access Shared Resources
+- Accéder aux ressources partagées
 
-  > Log in to the client machines using domain user accounts.
-  > Map network drives to access shared folders.
+  > Connectez-vous aux machines clientes à l'aide de comptes d'utilisateur de domaine. Mappez les lecteurs
+
+  > Réseau pour accéder aux dossiers partagés.
 
 - Ouvrez l'explorateur de fichiers et faites un clic droit sur le PC et selectionnez `Mapper le lecteur réseau`.
 
@@ -62,9 +63,9 @@ Sharing Methods ->   Mapped  |  Network
 Sharing Methods ->  Network  |  Mapped
 ```
 
-#### Activity 3: GPO Configuration
+#### Activité 3 : Configuration des GPO
 
-- Configure Group Policy Objects (GPOs) to automatically map network drives for users.
+- Configurez les objets de stratégie de groupe (GPO) pour mapper automatiquement les lecteurs réseau pour les utilisateurs.
 
 ![File Services](/03_File_Services/assets/09.png)
 
@@ -78,9 +79,9 @@ Sharing Methods ->  Network  |  Mapped
 
 ![File Services](/03_File_Services/assets/14.png)
 
-#### Activity 4: Implement quotas and file screening using File Server Resource Manager (FSRM)
+#### Activité 4 : Mettre en œuvre des quotas et un filtrage des fichiers à l'aide du gestionnaire de ressources du serveur de fichiers (FSRM)
 
-- Configure FSRMto create Quota Template and File Screen Template to effectively manage File Storage in your organization
+- Configurez FSRM pour créer un modèle de quota et un modèle d'écran de fichiers afin de gérer efficacement le stockage de fichiers dans votre organisation.
 
 ![File Services](/03_File_Services/assets/15.png)
 
@@ -92,7 +93,7 @@ Sharing Methods ->  Network  |  Mapped
 
 ![File Services](/03_File_Services/assets/19.png)
 
-- Développons cela et de même avec Quotas il ya un paramètre différent, donc la gestion du filtrage des fichiers consiste essentiellement à contrôler les types de fichiers que vous pouvez autoriser sur ce dossier partagé. Donc les exemples de types de fichiers sont (`.DOC , .JPG , .PNG , .EPS , .CDR , .TXT , .GIF, .MP3 , .WAV , .AI , .MOV , .EXE , .DMG , .RAR , .ZIP , .PDF`)
+- Développons cela et de même avec Quotas il y a un paramètre différent, donc la gestion du filtrage des fichiers consiste essentiellement à contrôler les types de fichiers que vous pouvez autoriser sur ce dossier partagé. Donc les exemples de types de fichiers sont (`.DOC , .JPG , .PNG , .EPS , .CDR , .TXT , .GIF, .MP3 , .WAV , .AI , .MOV , .EXE , .DMG , .RAR , .ZIP , .PDF`)
 
 ![File Services](/03_File_Services/assets/20.png)
 
